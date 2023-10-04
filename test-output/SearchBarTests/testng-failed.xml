@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SearchBarTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SearchBarTests(failed)">
+    <classes>
+      <class name="mx.com.liverpool.SearchBarTests">
+        <methods>
+          <include name="zoomIcon_returnsSearchResults"/>
+        </methods>
+      </class> <!-- mx.com.liverpool.SearchBarTests -->
+    </classes>
+  </test> <!-- SearchBarTests(failed) -->
+</suite> <!-- Failed suite [SearchBarTests] -->
