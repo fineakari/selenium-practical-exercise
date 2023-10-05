@@ -11,7 +11,7 @@ import mx.com.liverpool.pages.HomePage;
 public class FiltersTests extends TestUtilities {
 
 	@Parameters({ "search-keywords" })
-	@Test
+	@Test(groups = { "smokeTests" })
 	public void checkboxFilter_canBeSelected(@Optional("karaoke") String searchkeywords) {
 		log.info("Starting 'Checkbox can be selected' test.");
 		HomePage homePage = new HomePage(driver, log);

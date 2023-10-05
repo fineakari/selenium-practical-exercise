@@ -4,6 +4,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import mx.com.liverpool.base.BasePage;
+
 public class LoginPage extends BasePage {
 
 	private By usernameLocator = By.xpath("//input[@id='username']");

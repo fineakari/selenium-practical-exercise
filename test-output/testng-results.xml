@@ -1,32 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-04T18:40:10 CST" name="Default suite" finished-at="2023-10-04T18:40:28 CST" duration-ms="18877">
+  <suite started-at="2023-10-05T12:54:33 CST" name="SearchBarTestsSuite" finished-at="2023-10-05T12:55:18 CST" duration-ms="44963">
     <groups>
+      <group name="smokeTests">
+        <method signature="SearchBarTests.searchBar_isVisible()[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@3c41ed1d]" name="searchBar_isVisible" class="mx.com.liverpool.homepage.SearchBarTests"/>
+        <method signature="SearchBarTests.zoomIcon_returnsSearchResults(java.lang.String)[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@65e98b1c]" name="zoomIcon_returnsSearchResults" class="mx.com.liverpool.homepage.SearchBarTests"/>
+        <method signature="SearchBarTests.zoomIcon_returnsSearchResults(java.lang.String)[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@6ad82709]" name="zoomIcon_returnsSearchResults" class="mx.com.liverpool.homepage.SearchBarTests"/>
+      </group> <!-- smokeTests -->
+      <group name="sanityTests">
+        <method signature="SearchBarTests.searchBar_isVisible()[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@3c41ed1d]" name="searchBar_isVisible" class="mx.com.liverpool.homepage.SearchBarTests"/>
+      </group> <!-- sanityTests -->
     </groups>
-    <test started-at="2023-10-04T18:40:10 CST" name="Default test" finished-at="2023-10-04T18:40:28 CST" duration-ms="18877">
-      <class name="mx.com.liverpool.homepage.LogInTests">
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:mx.com.liverpool.homepage.LogInTests@1165b38]" started-at="2023-10-04T18:40:10 CST" name="setUp" finished-at="2023-10-04T18:40:15 CST" duration-ms="5731" status="PASS">
+    <test started-at="2023-10-05T12:54:33 CST" name="SearchBarTests" finished-at="2023-10-05T12:55:08 CST" duration-ms="35558">
+      <class name="mx.com.liverpool.homepage.SearchBarTests">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@3c41ed1d]" started-at="2023-10-05T12:54:33 CST" name="setUp" finished-at="2023-10-05T12:54:41 CST" duration-ms="8163" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1ab5f08a]]>
+                <![CDATA[org.testng.TestRunner@f381794]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logIn_worksCorrectly()[pri:0, instance:mx.com.liverpool.homepage.LogInTests@1165b38]" started-at="2023-10-04T18:40:15 CST" name="logIn_worksCorrectly" finished-at="2023-10-04T18:40:28 CST" duration-ms="12591" status="PASS">
+        <test-method signature="searchBar_isVisible()[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@3c41ed1d]" started-at="2023-10-05T12:54:41 CST" name="searchBar_isVisible" finished-at="2023-10-05T12:55:06 CST" duration-ms="24727" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logIn_worksCorrectly -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mx.com.liverpool.homepage.LogInTests@1165b38]" started-at="2023-10-04T18:40:28 CST" name="tearDown" finished-at="2023-10-04T18:40:28 CST" duration-ms="475" status="PASS">
+        </test-method> <!-- searchBar_isVisible -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@3c41ed1d]" started-at="2023-10-05T12:55:06 CST" name="tearDown" finished-at="2023-10-05T12:55:08 CST" duration-ms="2552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mx.com.liverpool.homepage.LogInTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- mx.com.liverpool.homepage.SearchBarTests -->
+    </test> <!-- SearchBarTests -->
+    <test started-at="2023-10-05T12:54:33 CST" name="SearchKeywordTests" finished-at="2023-10-05T12:55:13 CST" duration-ms="40233">
+      <class name="mx.com.liverpool.homepage.SearchBarTests">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@65e98b1c]" started-at="2023-10-05T12:54:33 CST" name="setUp" finished-at="2023-10-05T12:54:41 CST" duration-ms="8844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2cdd0d4b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="zoomIcon_returnsSearchResults(java.lang.String)[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@65e98b1c]" started-at="2023-10-05T12:54:42 CST" name="zoomIcon_returnsSearchResults" finished-at="2023-10-05T12:55:12 CST" duration-ms="30781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chicharron]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zoomIcon_returnsSearchResults -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@65e98b1c]" started-at="2023-10-05T12:55:12 CST" name="tearDown" finished-at="2023-10-05T12:55:13 CST" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mx.com.liverpool.homepage.SearchBarTests -->
+    </test> <!-- SearchKeywordTests -->
+    <test started-at="2023-10-05T12:54:33 CST" name="SearchMultipleKeywordTests" finished-at="2023-10-05T12:55:18 CST" duration-ms="44963">
+      <class name="mx.com.liverpool.homepage.SearchBarTests">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@6ad82709]" started-at="2023-10-05T12:54:33 CST" name="setUp" finished-at="2023-10-05T12:54:41 CST" duration-ms="8367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7e9131d5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="zoomIcon_returnsSearchResults(java.lang.String)[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@6ad82709]" started-at="2023-10-05T12:54:41 CST" name="zoomIcon_returnsSearchResults" finished-at="2023-10-05T12:55:17 CST" duration-ms="35923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chicharron habanero]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zoomIcon_returnsSearchResults -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mx.com.liverpool.homepage.SearchBarTests@6ad82709]" started-at="2023-10-05T12:55:17 CST" name="tearDown" finished-at="2023-10-05T12:55:18 CST" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mx.com.liverpool.homepage.SearchBarTests -->
+    </test> <!-- SearchMultipleKeywordTests -->
+  </suite> <!-- SearchBarTestsSuite -->
 </testng-results>

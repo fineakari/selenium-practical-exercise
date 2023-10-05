@@ -10,7 +10,7 @@ import mx.com.liverpool.pages.HomePage;
 
 public class SearchBarTests extends TestUtilities {
 
-	@Test(groups = { "sanityTests" })
+	@Test(groups = { "sanityTests", "smokeTests" })
 	public void searchBar_isVisible() {
 		log.info("Starting Visibile Search Bar test.");
 		HomePage homePage = new HomePage(driver, log);

@@ -1,4 +1,4 @@
-package mx.com.liverpool.pages;
+package mx.com.liverpool.base;
 
 import java.time.Duration;
 import java.util.List;

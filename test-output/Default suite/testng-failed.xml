@@ -5,6 +5,7 @@
     <classes>
       <class name="mx.com.liverpool.homepage.LogInTests">
         <methods>
+          <include name="logOut"/>
           <include name="tearDown"/>
           <include name="logIn_worksCorrectly"/>
           <include name="setUp"/>

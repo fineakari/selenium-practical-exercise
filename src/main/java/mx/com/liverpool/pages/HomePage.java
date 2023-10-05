@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import mx.com.liverpool.base.BasePage;
+
 public class HomePage extends BasePage {
 
 	private String pageUrl = "https://www.liverpool.com.mx/tienda/home";
