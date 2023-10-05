@@ -1,6 +1,7 @@
 package mx.com.liverpool.pages;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -28,19 +29,24 @@ public class BasePage {
 
 	/** Find element using given locator */
 	protected WebElement find(By locator) {
-		waitForVisibilityOf(locator, Duration.ofSeconds(5));
+		waitForVisibilityOf(locator, Duration.ofSeconds(10));
 		return driver.findElement(locator);
+	}
+
+	/** Find all elements using given locator */
+	protected List<WebElement> findAll(By locator) {
+		return driver.findElements(locator);
 	}
 
 	/** Click on element with given locator when its visible */
 	protected void click(By locator) {
-		waitForVisibilityOf(locator, Duration.ofSeconds(5));
+		waitForVisibilityOf(locator, Duration.ofSeconds(10));
 		find(locator).click();
 	}
 
 	/** Type given text into element with given locator */
 	protected void enterText(String text, By locator) {
-		waitForVisibilityOf(locator, Duration.ofSeconds(5));
+		waitForVisibilityOf(locator, Duration.ofSeconds(10));
 		find(locator).sendKeys(text);
 	}
 

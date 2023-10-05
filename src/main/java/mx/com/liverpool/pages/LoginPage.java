@@ -9,15 +9,27 @@ public class LoginPage extends BasePage {
 	private By usernameLocator = By.xpath("//input[@id='username']");
 	private By passwordLocator = By.xpath("//input[@id='password']");
 	private By logInButtonLocator = By
-			.xpath("/body//section//form[@method='POST']/div[@class='c4b4939bc']/button[@name='action']");
+			.xpath("/html/body//section//form[@method='POST']/div[@class='c4b4939bc']/button[@name='action']");
 
 	public LoginPage(WebDriver driver, Logger log) {
 		super(driver, log);
 	}
 
+	public boolean isUsernameFieldVisible() {
+		return find(usernameLocator).isDisplayed();
+	}
+
+	public boolean isPasswordFieldVisible() {
+		return find(passwordLocator).isDisplayed();
+	}
+
+	public boolean isLogInButtonVisible() {
+		return find(logInButtonLocator).isDisplayed();
+	}
+
 	/** Execute log in */
 	public HomePage logIn(String username, String password) {
-		log.info("Executing LogIn with username [" + username + "] and password [" + password + "]");
+		log.info("Executing LogIn");
 		enterText(username, usernameLocator);
 		enterText(password, passwordLocator);
 		click(logInButtonLocator);

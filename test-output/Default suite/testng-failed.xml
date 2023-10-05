@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mx.com.liverpool.homepage.SearchBarTests">
+      <class name="mx.com.liverpool.homepage.LogInTests">
         <methods>
           <include name="tearDown"/>
-          <include name="searchBar_isVisible"/>
+          <include name="logIn_worksCorrectly"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- mx.com.liverpool.homepage.SearchBarTests -->
+      </class> <!-- mx.com.liverpool.homepage.LogInTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
